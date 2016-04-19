@@ -1,6 +1,7 @@
 import java.util.*;
 
-public class validator {  // Bill's Validator class blatantly stolen for my benefit
+public class validator { // Bill's Validator class blatantly stolen for my
+							// benefit
 
 	static Scanner scan = new Scanner(System.in);
 
@@ -32,7 +33,7 @@ public class validator {  // Bill's Validator class blatantly stolen for my bene
 		}
 		return z;
 	}
-	
+
 	public static String readValidString(int l) {
 		while (!scan.hasNextLine() && scan.nextLine().length() > l) {
 			scan.nextLine();
@@ -41,7 +42,7 @@ public class validator {  // Bill's Validator class blatantly stolen for my bene
 		String x = scan.nextLine();
 		return x;
 	}
-	
+
 	public static String getValidString(String inputs, int length) {
 		String i = readValidString(length);
 		while (!(i.matches(inputs))) {

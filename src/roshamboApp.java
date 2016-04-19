@@ -7,9 +7,9 @@ public class roshamboApp {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
-		String userConsent = null;
-		int humanVictory = 0;
 		int machineVictory = 0;
+		int humanVictory = 0;
+		String userConsent = null;
 		Player opponent = null;
 
 		System.out.println("Welcome to Rock, Paper, Scissors!");
@@ -62,11 +62,11 @@ public class roshamboApp {
 			if (userConsent.equalsIgnoreCase("y")) {
 				continue;
 			} else {
-				System.out.println("You won " + humanVictory + " times and the computer won " + machineVictory + " times.");
+				System.out.println(
+						"You won " + humanVictory + " times and the computer won " + machineVictory + " times.");
 				input.close();
 				break;
 			}
-			
 
 		}
 
